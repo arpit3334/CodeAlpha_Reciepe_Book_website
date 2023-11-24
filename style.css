@@ -1,0 +1,268 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1em 0;
+}
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    max-width: 100px; 
+    margin-right: 10px;
+}
+
+#logo h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+nav {
+    background-color: #eee;
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+    background-color: #317e48;
+    
+    padding: 5px 5px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+section {
+    margin: 20px;
+    background-color: #c4c1c1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+ul#recipeList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul#recipeList li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+ul#recipeList strong {
+    font-size: 18px;
+}
+
+ul#recipeList em {
+    font-style: italic;
+    color: #555;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #555;
+}
+
+button {
+    background-color: #f1e8e8;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #044e25;
+    color: #f8f8f8;
+}
+
+ul#recipeList li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+ul#recipeList li:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+ul#recipeList strong {
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+ul#recipeList li:hover strong {
+    color: #555;
+}
+
+ul#recipeList em {
+    font-style: italic;
+    color: #777;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ul#recipeList li {
+    animation: fadeIn 0.5s ease-out;
+}
+
+
+button.edit, button.delete {
+    background-color: #eee;
+    color: #555;
+    margin-right: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button.edit:hover, button.delete:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+
+/* Slide-in animation for the form */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    margin: 20px;
+    background-color: rgb(214, 208, 208);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Fade-in animation for the recipe list items */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ul#recipeList li {
+    animation: fadeIn 0.5s ease-out;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #333;
+}

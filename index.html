@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Organizer</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="Logo">
+            <h1>Recipe Organizer</h1>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#add">Add Recipe</a></li>
+            <li><a href="#view">View Recipes</a></li>
+        
+        <li><input type="text" id="searchBar" placeholder="Search..."></li>
+    </ul>
+    </nav>
+    
+
+    <section id="add">
+        <h2>Add Recipe</h2>
+       
+        <form id="recipeForm">
+            <label for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" required>
+    
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" rows="4" required></textarea>
+    
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" rows="6" required></textarea>
+    
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" accept="image/*">
+    
+            <button type="button" onclick="addRecipe()">Add Recipe</button>
+        </form>
+    </section>
+
+    <section id="view">
+        <h2>View Recipes</h2>
+        <!-- Display added recipes -->
+        <ul id="recipeList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+    <footer>
+        <h1>Created by Arpit Developer</h1>
+    </footer>
+</body>
+</html>
